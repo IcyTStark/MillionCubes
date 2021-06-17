@@ -5,6 +5,7 @@ using UnityEngine;
 public class MillionCubes : MonoBehaviour
 {
     [SerializeField] GameObject cubePrefab;
+    [SerializeField] GameObject parentforCubes;
     
     [SerializeField] int rows, columns, depth;
     [SerializeField] float padding;
@@ -18,6 +19,7 @@ public class MillionCubes : MonoBehaviour
                 {
                     Vector3 pos = new Vector3(k * padding, j * padding, i * padding);
                     var spawn = (GameObject)Instantiate(cubePrefab, pos, Quaternion.identity);
+                    spawn.transform.parent = parentforCubes.transform;
                 }
             }
         }
