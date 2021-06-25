@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 public class CubeDestroy : MonoBehaviour
 {
+    private void Start()
+    {
+        
+    }
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hitInfo;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -14,12 +18,10 @@ public class CubeDestroy : MonoBehaviour
             {
                 if (hitInfo.collider.tag == "Player")
                 {
-                    Destroy(hitInfo.transform.gameObject);
+                    //Destroy(hitInfo.transform.gameObject);
                 }
 
             }
         }
-
-
     }
 }

@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 8d9a9578005e62242a53f727794b740c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5991438834536956891
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_0"
+  - first:
+      213: 1087624168623576522
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_1"
+  - first:
+      213: 3602845555957121270
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_2"
+  - first:
+      213: -6089213972486254459
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_3"
+  - first:
+      213: 4012221550344916021
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_4"
+  - first:
+      213: 1888338855781553824
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_5"
+  - first:
+      213: -6758214626134779182
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_6"
+  - first:
+      213: 3896523824750490985
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_7"
+  - first:
+      213: 215399593095880122
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_8"
+  - first:
+      213: 7164195034607953740
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_9"
+  - first:
+      213: 8063793019376944132
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_10"
+  - first:
+      213: -261488675227790207
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_11"
+  - first:
+      213: 5476635936352111320
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_12"
+  - first:
+      213: 2423519800026381596
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_13"
+  - first:
+      213: -8879831486938429258
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_14"
+  - first:
+      213: 1560350298101225302
+    second: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_15"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_0"
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 933
+        width: 177
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd34e0240edd52350800000000000000
+      internalID: 5991438834536956891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_1"
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 925
+        width: 212
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac510fb3b64081f00800000000000000
+      internalID: 1087624168623576522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_2"
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 925
+        width: 198
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f04b67c1f0eff130800000000000000
+      internalID: 3602845555957121270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_3"
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 955
+        width: 221
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5809c907724ce7ba0800000000000000
+      internalID: -6089213972486254459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_4"
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 639
+        width: 202
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cc97c0e364ea730800000000000000
+      internalID: 4012221550344916021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_5"
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 633
+        width: 221
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a65d6a3f2ab43a10800000000000000
+      internalID: 1888338855781553824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_6"
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 640
+        width: 155
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da1365aa9ff532a0800000000000000
+      internalID: -6758214626134779182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_7"
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 678
+        width: 221
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965791126cb331630800000000000000
+      internalID: 3896523824750490985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_8"
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 338
+        width: 189
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd5e37e9c04df200800000000000000
+      internalID: 215399593095880122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_9"
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 340
+        width: 150
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47ac6b2d655c6360800000000000000
+      internalID: 7164195034607953740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_10"
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 338
+        width: 133
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404cc3ef60958ef60800000000000000
+      internalID: 8063793019376944132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_11"
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 331
+        width: 206
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18492407f610f5cf0800000000000000
+      internalID: -261488675227790207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_12"
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 33
+        width: 221
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da086e1e5be00c40800000000000000
+      internalID: 5476635936352111320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_13"
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 33
+        width: 194
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1db2b2fa6212a120800000000000000
+      internalID: 2423519800026381596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_14"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 43
+        width: 156
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8c4bb5f4084c480800000000000000
+      internalID: -8879831486938429258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of fresh colorful fruit_5157382_15"
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 33
+        width: 184
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6579f7b345a77a510800000000000000
+      internalID: 1560350298101225302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -18,7 +18,7 @@ public class MillionCubes : MonoBehaviour
                 for (int k = 0; k < rows; k++)
                 {
                     Vector3 pos = new Vector3(k * padding, j * padding, i * padding);
-                    var spawn = (GameObject)Instantiate(cubePrefab, pos, Quaternion.identity);
+                    GameObject spawn = Instantiate(cubePrefab, pos, Quaternion.identity) as GameObject;
                     spawn.transform.parent = parentforCubes.transform;
                 }
             }
