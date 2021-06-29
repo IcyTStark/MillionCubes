@@ -912,7 +912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204528319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.39, z: -1.17}
+  m_LocalPosition: {x: 1.36, y: 1.02, z: -8.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -975,6 +975,8 @@ GameObject:
   - component: {fileID: 1266597683}
   - component: {fileID: 1266597684}
   - component: {fileID: 1266597686}
+  - component: {fileID: 1266597687}
+  - component: {fileID: 1266597688}
   m_Layer: 0
   m_Name: Cube Spawner
   m_TagString: Untagged
@@ -994,7 +996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 879b2410259cbde4e9f3dcc92ca7fd86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubePrefab: {fileID: 5995611251684562858, guid: a6146cd6aa3098542a032467a1728a17, type: 3}
+  cubePrefab: {fileID: 3958441627111119504, guid: 36b5bf7d449e4ac40a1838bb205a7abc, type: 3}
   parentforCubes: {fileID: 1188197037}
   rows: 3
   columns: 3
@@ -1055,6 +1057,34 @@ MonoBehaviour:
   cubeSize: 1
   prefab: {fileID: 5995611251684562858, guid: a6146cd6aa3098542a032467a1728a17, type: 3}
   dimensions: 3
+--- !u!114 &1266597687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266597681}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4edddb8b1f6044ab04aecbef4a8f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubePrefab: {fileID: 5995611251684562858, guid: a6146cd6aa3098542a032467a1728a17, type: 3}
+  cubeSize: 1
+--- !u!114 &1266597688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266597681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5b0de2d173092c478a5d9b0c7aa1bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubePrefab: {fileID: 5995611251684562858, guid: a6146cd6aa3098542a032467a1728a17, type: 3}
+  cubeSize: 1
 --- !u!1001 &1617179769
 PrefabInstance:
   m_ObjectHideFlags: 0

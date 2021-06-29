@@ -11,8 +11,8 @@ public class DissolveController : MonoBehaviour
     void Start()
     {
         var renderer = GetComponent<MeshRenderer>();
-        //material = Instantiate(renderer.sharedMaterial);
-        //renderer.material = material;
+        material = Instantiate(renderer.sharedMaterial);
+        renderer.material = material;
         
     }
 
@@ -34,6 +34,7 @@ public class DissolveController : MonoBehaviour
             {
                 if(hitInfo.collider.tag == "Player")
                 {
+                    Debug.Log("Im Hitting");
                     StartCoroutine(SmoothMove(1f,hitInfo));
                 }
             }
