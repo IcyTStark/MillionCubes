@@ -11,8 +11,8 @@ public class DissolveController : MonoBehaviour
     void Start()
     {
         var renderer = GetComponent<MeshRenderer>();
-        material = Instantiate(renderer.sharedMaterial);
-        renderer.material = material;
+        //material = Instantiate(renderer.sharedMaterial);
+        //renderer.material = material;
         
     }
 
@@ -46,7 +46,7 @@ public class DissolveController : MonoBehaviour
         while(t<=1.0)
         {
             t += Time.deltaTime / dissolveSpeed;
-            material.SetFloat("_DissolveSlider", Mathf.Lerp(v, endpos, Mathf.SmoothStep(0f, 1f, t)));
+            hitthing.transform.gameObject.GetComponent<MeshRenderer>().material.SetFloat("_DissolveSlider", Mathf.Lerp(v, endpos, Mathf.SmoothStep(0f, 1f, t)));
             Destroy(hitthing.transform.gameObject ,1.5f);
             yield return null;
         }
