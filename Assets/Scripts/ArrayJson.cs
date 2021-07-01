@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Text.RegularExpressions;
+using FruitMain;
 
 public class ArrayJson : MonoBehaviour
 {
@@ -11,15 +12,36 @@ public class ArrayJson : MonoBehaviour
     [SerializeField] GameObject cubePrefab;
     [SerializeField] float cubeSize;
 
+    void Start()
+    {
+        
+        myCubeDataList = JsonUtility.FromJson<CubeDataList>(ArrayJSONFile.text);
+        for (int i = 0; i < myCubeDataList.cubeDatas.Length; i++)
+        {
+            SpawnCube(myCubeDataList.cubeDatas[i].cubePosition, myCubeDataList.cubeDatas[i].Cube);
+        }
+    }
+
     //Enum Decalaration for Type of cubes
+    //public enum CubeType
+    //{
+    //    white,
+    //    yellow,
+    //    blue,
+    //    red,
+    //    green
+    //}
+
     public enum CubeType
     {
-        white,
-        yellow,
-        blue,
-        red,
-        green
+        apple,
+        avacado,
+        banana,
+        berry,
+        custardapple,
+        grape
     }
+
 
     private readonly IReadOnlyDictionary<CubeType, Color> colors = new Dictionary<CubeType, Color>
     {
@@ -30,12 +52,22 @@ public class ArrayJson : MonoBehaviour
         {CubeType.green, Color.green}
     };
 
+    private readonly IReadOnlyDictionary<CubeType, Fruit> fruits = new Dictionary<CubeType, Fruit>
+    {
+        {CubeType.apple,Fruit.Apple},
+        {CubeType.avacado, Fruit.Avocado},
+        {CubeType.banana, Fruit.Banana},
+        {CubeType.berry, Fruit.Berry},
+        {CubeType.custardapple, Fruit.Custdapple},
+        {CubeType.grape,Fruit.Grape}
+    };
+
     //Spawn Cube Function
     public void SpawnCube(Vector3 pos, CubeType type)
     {
         var cube = Instantiate(cubePrefab, pos * cubeSize, Quaternion.identity);
         // Or whatever you want to do with the type
-        cube.GetComponent<Renderer>().material.color = colors[type];
+        cube.GetComponent<Renderer>().material = fruits[type];
     }
 
     //Array JSON Read and write
@@ -54,12 +86,5 @@ public class ArrayJson : MonoBehaviour
 
     public CubeDataList myCubeDataList = new CubeDataList();
     
-    void Start()
-    {
-        myCubeDataList = JsonUtility.FromJson<CubeDataList>(ArrayJSONFile.text);
-        for (int i = 0; i < myCubeDataList.cubeDatas.Length; i++)
-        {
-            SpawnCube(myCubeDataList.cubeDatas[i].cubePosition, myCubeDataList.cubeDatas[i].Cube);   
-        }
-    }
+    
 }
