@@ -7,6 +7,7 @@ public class JSONWriter : MonoBehaviour
 {
     [SerializeField] int rows, columns, depth , minDepth , minColumn , minRow;
     [SerializeField] float padding;
+    [SerializeField] string fileName;
     public enum CubeType
     {
         white,
@@ -50,8 +51,9 @@ public class JSONWriter : MonoBehaviour
 
     public void outputJSON()
     {
+        Debug.Log("Your File is Updates");
         string strOutput = JsonUtility.ToJson(myCubeDataList);
-        File.WriteAllText(Application.dataPath + "/Resources/10x10x10.txt", strOutput);
+        File.WriteAllText(Application.dataPath + "/Resources/" + fileName + ".txt", strOutput);
     }
 
     //CubeData myCubeData = new CubeData();
