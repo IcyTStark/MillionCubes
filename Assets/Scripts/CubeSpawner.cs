@@ -4,46 +4,95 @@ using UnityEngine;
 
 public class CubeSpawner : MonoBehaviour
 {
-    public GameObject block1;
+    public GameObject cubePrefab;
+    public float cubeSize;
+    private string FileLoacation;
+    [SerializeField] string saveFileName;
+    [SerializeField] int rows, columns, depth, minDepth, minColumn, minRow;
+    [SerializeField] float padding;
 
-    public int worldWidth = 10;
-    public int worldHeight = 10;
 
-    public float spawnSpeed = 0;
+    private Dictionary<CubeType, Material> fruitsMaterial;
 
-    void Start()
+    [SerializeField]
+    private CubeDataList myCubeDataList = new CubeDataList();
+    bool dataLaoded;
+
+    private void Awake()
     {
-        //StartCoroutine(CreateWorld());
-        for (int x = 0; x < worldWidth; x++)
+        CreateMatDictionary();
+        FileLoacation = Application.dataPath + "/Resources/" + saveFileName + ".txt";
+        CubeDataList temp = JSONWriter.LoadData(FileLoacation);
+        if (temp != null)
         {
-            //yield return new WaitForSeconds(spawnSpeed);
-
-            for (int z = 0; z < worldHeight; z++)
-            {
-                //yield return new WaitForSeconds(spawnSpeed);
-
-                GameObject block = Instantiate(block1, Vector3.zero, block1.transform.rotation) as GameObject;
-                block.transform.parent = transform;
-                block.transform.localPosition = new Vector3(x, 0, z);
-            }
+            myCubeDataList = temp;
+            dataLaoded = true;
+        }
+    }
+    private void Start()
+    {             
+        if(dataLaoded)
+        {
+            LoadCube();
+        }
+        else
+        {
+            CreateCube();
         }
     }
 
-    IEnumerator CreateWorld()
+
+    public void CreateMatDictionary()
     {
-        for (int x = 0; x < worldWidth; x++)
+        fruitsMaterial = new Dictionary<CubeType, Material>
         {
-            yield return new WaitForSeconds(spawnSpeed);
-
-            for (int z = 0; z < worldHeight; z++)
-            {
-                yield return new WaitForSeconds(spawnSpeed);
-
-                GameObject block = Instantiate(block1, Vector3.zero, block1.transform.rotation) as GameObject;
-                block.transform.parent = transform;
-                block.transform.localPosition = new Vector3(x, 0, z);
-            }
+            {CubeType.Apple,ResourceLoader.LoadMaterial(CubeType.Apple.ToString())},
+            {CubeType.Avacado, ResourceLoader.LoadMaterial(CubeType.Avacado.ToString())},
+            {CubeType.Banana, ResourceLoader.LoadMaterial(CubeType.Banana.ToString())},
+            {CubeType.Berry, ResourceLoader.LoadMaterial(CubeType.Berry.ToString())},
+            {CubeType.CustardApple, ResourceLoader.LoadMaterial(CubeType.CustardApple.ToString())},
+            {CubeType.Grape,ResourceLoader.LoadMaterial(CubeType.Grape.ToString())}
+        };
+    }
+    public void LoadCube()
+    {
+        for (int i = 0; i < myCubeDataList.cubeDatas.Length; i++)
+        {
+            SpawnCube(myCubeDataList.cubeDatas[i].cubePosition, myCubeDataList.cubeDatas[i].Cube);
         }
     }
+
+    public void SpawnCube(Vector3 pos, CubeType type)
+    {
+        var cube = Instantiate(cubePrefab, pos * cubeSize, Quaternion.identity);
+
+        cube.GetComponent<Renderer>().material = fruitsMaterial[type];
+    }
+
+    public void CreateCube()
+    {
+        for (int x = 0; x < myCubeDataList.cubeDatas.Length; x++)
+        {
+
+            for (int i = minDepth; i < depth; i++)
+            {
+                for (int j = minColumn; j < columns; j++)
+                {
+                    for (int k = minRow; k < rows; k++)
+                    {
+
+                        myCubeDataList.cubeDatas[x].cubePosition = new Vector3(i, j, k) * padding;
+                        myCubeDataList.cubeDatas[x].Cube = (CubeType)Random.Range(0, System.Enum.GetValues(typeof(CubeType)).Length);
+                        SpawnCube(myCubeDataList.cubeDatas[x].cubePosition, myCubeDataList.cubeDatas[x].Cube);
+                        x++;
+
+                    }
+                }
+            }
+        }
+
+        JSONWriter.SaveData(FileLoacation, myCubeDataList);
+    }
+
 }
 
